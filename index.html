@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/43ec31efc6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b50e52a22b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Empieza Barra de Navegacion Instagram -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Create a new post
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Caption:</label
+                  >
+                  <textarea
+                    class="form-control"
+                    placeholder="Add the caption of your post here"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                  <button type="button" class="btn btn-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-camera-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"
+                      />
+                      <path
+                        d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"
+                      />
+                    </svg>
+                  </button>
+                  <button type="button" class="btn btn-light">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-geo-alt-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Termina Modal -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <span class="btn btn-success"> Create a new post </span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-gear"></i>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Profile</a>
+                <a class="dropdown-item" href="#">Accesibility</a>
+                <a class="dropdown-item" href="#">Privacy and Data</a>
+                <a class="dropdown-item text-danger border-top" href="#"
+                  >Log out</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Termina Barra de Navegacion Instagram-->
+
+    <!-- Empieza Barra de Navegacion 2-->
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-home"
+          type="button"
+          role="tab"
+          aria-controls="nav-home"
+          aria-selected="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-grid-3x3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"
+            />
+          </svg>
+        </button>
+        <button
+          class="nav-link"
+          id="nav-profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-profile"
+          type="button"
+          role="tab"
+          aria-controls="nav-profile"
+          aria-selected="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-square-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <!-- Empieza Boton Grid-->
+      <div
+        class="tab-pane fade show active"
+        id="nav-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
+        tabindex="0"
+      >
+        <!-- Empieza Mosaico-->
+
+        <!-- 1-->
+        <div class="row row-cols-1 row-cols-md-3 g-2">
+          <div class="col">
+            <div class="position-absolute top-0 start-0 translate-middle"></div>
+            <div class="card h-100">
+              <img src="https://picsum.photos/id/212/1000" alt="Bikes" />
+            </div>
+          </div>
+
+           <!-- 2-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/211/1000" alt="Boat"/>
+            </div>
+          </div>
+
+          <!-- 3-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/210/1000" alt="Wall"/>
+            </div>
+          </div>
+          <!-- 4-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/214/1000" alt="City"/>
+            </div>
+          </div>
+
+          <!-- 5-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/215/1000" alt="Sand"/>
+            </div>
+          </div>
+
+          <!-- 6-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/216/1000" alt="Grass"/>
+            </div>
+          </div>
+
+          <!-- 7-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/217/1000"alt="Broken Bridge"/>
+            </div>
+          </div>
+
+          <!-- 8-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/220/1000" alt="Street at Night"/>
+            </div>
+          </div>
+
+          <!-- 9-->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/id/230/1000" alt="Dock"/>
+            </div>
+          </div>
+        </div>
+        <!-- Termina Mosaico-->
+      </div>
+      <!-- Termina Boton Grid-->
+
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+        tabindex="0"
+      >
+        <!-- Empieza Imagenes-->
+        <!-- Empieza Boton Imagenes-->
+
+        <!-- 1-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Downtown day</h5>
+                <p class="card-title">08/12</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/212/1000" alt="Bikes" />
+            <ul class="list-group list-group-flush">
+             
+              <li class="list-group-item">
+                <b>7,878 Likes</b><br>
+                Donec quis dui at dolor tempor interdum.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Summer time!</h5>
+                <p class="card-title">28/11</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/211/1000" alt="Boat" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>1,234 Likes</b><br>
+                Cras iaculis ultricies nulla.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 3-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Talking to a bric kwall</h5>
+                <p class="card-title">22/11</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/210/1000" alt="Wall" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>2,341 Likes</b><br>
+                It's the only thing in the world that never contradicts me!
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 4-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Look above</h5>
+                <p class="card-title">08/10</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/214/1000" alt="City" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>6,257 Likes</b><br>
+                Vestibulum commodo felis quis tortor.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 5-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Weekend Vibes</h5>
+                <p class="card-title">02/10</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/215/1000" alt="Sand" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>7,176 Likes</b><br>
+                Integer vitae libero ac risus egestas placerat.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 6-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Just walking</h5>
+                <p class="card-title">18/09</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/216/1000" alt="Grass" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>3,761 Likes</b><br>
+                Fusce pellentesque suscipit nibh.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 7-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Expect of failure</h5>
+                <p class="card-title">10/09</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/217/1000" alt="Broken Bridge" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>6,618 Likes</b><br>
+                Praesent placerat risus quis eros.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 8-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Foggy nights</h5>
+                <p class="card-title">25/08</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/220/1000" alt="Street at Night" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>6,120 Likes</b><br>
+                Vivamus vestibulum ntulla nec ante.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 9-->
+        <div class="container2">
+          <div class="card">
+            <div class="card-body">
+              <div class="post-head">
+                <h5 class="card-title">Peace</h5>
+                <p class="card-title">18/08</p>
+              </div>
+            </div>
+            <img src="https://picsum.photos/id/230/1000" alt="Dock" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>6,120 Likes</b><br>
+                Cras ornare tristique elit.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Termina Imagenes-->
+      </div>
+      <!-- Termina Boton Imagenes-->
+    </div>
+    <!-- Termina Barra de Navegacion 2-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
